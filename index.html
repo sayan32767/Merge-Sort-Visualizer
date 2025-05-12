@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merge Sort Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Merge Sort Visualizer</h1>
+
+  <div class="input-section">
+    <label>Array Size:
+        <input type="number" id="array-size" min="1" max="100" value="100" />
+    </label>
+    <button onclick="createInputFields()">Create Fields</button>
+  </div>
+
+  <div id="array-inputs"></div>
+  <button onclick="submitArray()">Submit Array</button>
+  <button onclick="mergeSort(array, 0, array.length - 1)">Start Merge Sort</button>
+
+  <div id="array-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
